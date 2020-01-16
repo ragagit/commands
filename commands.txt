@@ -1,0 +1,43 @@
+Commands Summary
+
+========= NodeJS =======
+-Node version
+node -v 
+
+-Packages installed with npm
+npm list -g --depth 0
+
+-Express js
+npm install -g express
+npm view express version 
+npm install express --save //As a dependency
+npm install -g express-generator
+express -e projectName
+
+-MySql
+npm install mysql
+
+-MongoDB on Catalina
+brew uninstall mongodb
+brew tap mongodb/brew
+brew install mongodb-community
+
+Start mongo
+mongod --dbpath ./data/db 		// the directories should be created before
+
+Load records
+mongoimport --db skillbakery --collection courses --drop --file courses.json
+
+Mongo shell
+mongo  //this will open a mongo shell, then type
+use skillbakery     //the db
+db.courses.find()
+
+Docker 
+docker run -p 27017:27017 -d mongo
+
+To connect Express to Mongo DB we need mongoose
+npm install mongoose
+mongoimport --db skillbakery --collection courses  --file course1.json
+
+
