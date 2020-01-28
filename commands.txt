@@ -1,5 +1,9 @@
 Commands Summary
 
+========= npm ==========
+-To upgrade npm
+npm install -g npm
+
 ========= NodeJS =======
 -Node version
 node -v 
@@ -13,6 +17,9 @@ npm view express version
 npm install express --save //As a dependency
 npm install -g express-generator
 express -e projectName
+
+-To upgrade node
+npm install -g n
 
 -MySql
 npm install mysql
@@ -39,5 +46,68 @@ docker run -p 27017:27017 -d mongo
 To connect Express to Mongo DB we need mongoose
 npm install mongoose
 mongoimport --db skillbakery --collection courses  --file course1.json
+
+
+======= React =======
+npm install -g create-react-app
+npm create-react-app newApplicationName
+npm install component_name --save //. The save adds dependency to package.json file.
+
+npm install --save axios
+npm install --save react-router-dom
+npm install bootstrap jquery popper.js --save
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome --save
+
+npm start
+http://localhost:3000
+
+======= Angular ======
+-To get version
+	ng -version
+
+-To install angular CLI
+	npm install -g @angular/cli
+
+-To start the app
+	ng serve
+	http://localhost:4200
+
+-Creating components
+	cd to app directory
+	ng g component component_name
+-To use the new component
+	import in  app.module.ts
+	NOTE: Using ng g component adds it automatically
+
+-Creating directives
+	ng g directive stockDirective
+
+-Creating services
+	ng g service stockservice
+
+-Creating pipes
+	ng g pipe pipe_name
+
+-Typescript
+	ng g class Bonds
+	ng g interface Security
+
+-Boot strap
+	npm install bootstrap --save
+
+
+
+======== Git =========
+
+echo "# scala" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ragagit/scala.git
+git push -u origin master
+
+git remote add origin https://github.com/ragagit/scala.git
+git push -u origin master
+
 
 
